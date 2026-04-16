@@ -1,0 +1,9 @@
+services:
+  spark-container:
+    image: jupyter/pyspark-notebook
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+      - "7077:7077"
+    volumes:
+      - .:/home/jovyan/work
